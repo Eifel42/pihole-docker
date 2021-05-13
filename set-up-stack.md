@@ -29,7 +29,7 @@ docker network create -d macvlan \
 
 ## docker-compose.yml
 
-The file [docker-compose.yml](docker-compose.yml) describes the setup of the Pi-Hole Stack. By using the default setup of this project, only the password of the Pi-Hole instances can change. The default password is "secret1234". 
+The file [docker-compose.yml](scripts/docker-compose.yml) describes the setup of the Pi-Hole Stack. By using the default setup of this project, only the password of the Pi-Hole instances can change. The default password is "secret1234". 
 
 Noteworthy is that all commands run the folder with file docker-compose.yml. 
 
