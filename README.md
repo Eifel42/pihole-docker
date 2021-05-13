@@ -24,5 +24,5 @@ This project use [Cloudflare](https://www.cloudflare.com/de-de/learning/dns/what
 - After more than a year of using it, we got less internet advertising, and many internet sides run fast without problems.
 - Old internet devices have higher protection against spy and ransomware.
 - Some commercial sites and payments services must be unlocked. For users with a high affinity to computer systems, it is no big deal. Ordinary computer users can run into problems.
-- The project covers the best practices from more than a year's productive environment. 
+- The project covers the best practices from more than a year productive environment. 
 - Updates with docker-compose are easy and down under five minutes with one script.
