@@ -17,6 +17,8 @@ The installation has the following structure on the home directory of a Raspberr
 2. Move to folder stack-pihole (cd ~/stack-pihole).
 3. Copy all files from the script folder to stack-pihole.
 4. Create the folders c1 and c2 (mkdir c1, mkdir c2).
+
+
 The directories c1 and c2 contain the local setup of each Pi-Hole Instance. It is necessary for upgrading the Pi-Hole to new versions. The containers store the configuration in the folders.
 
 ## Build the Network
