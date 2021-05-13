@@ -24,9 +24,9 @@ This project use [Cloudflare](https://www.cloudflare.com/de-de/learning/dns/what
 ## Upgrade Pi-Hole
 
 To upgrade the stack to the next Pi-Hole Version is easy. It runs in three steps:
-**pull** loads the newest version of the Pi-Hole container from the Docker Hub.
-**down** stops the hole stack and removes all containers and networks defined in the docker-compose.yml. 
-**up** build the containers and networks and starts all four docker containers.
+1. **pull** loads the newest version of the Pi-Hole container from the Docker Hub.
+1. **down** stops the hole stack and removes all containers and networks defined in the docker-compose.yml. 
+1. **up** build the containers and networks and starts all four docker containers.
 
 The upgrade can be do with the script [uprade-stack.sh](scripts/upgrade-stack.sh).
 
