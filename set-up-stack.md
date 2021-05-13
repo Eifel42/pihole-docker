@@ -39,6 +39,8 @@ The file [docker-compose.yml](scripts/docker-compose.yml) describes the setup of
 
 Noteworthy is that all commands run the folder with file docker-compose.yml. 
 
+**Note: On the Raspberry Pi, the image: visibilityspots/cloudflare:alpine-3.12 works stable. This point has to figure out for new versions.**
+
 ## Build and Run Docker Containers
 
 To run the containers, the following steps are needed:
