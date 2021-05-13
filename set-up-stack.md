@@ -7,9 +7,9 @@ The stack needs an installation of docker and docker-compose on the Linux system
 The installation has the following structure on the home directory of a Raspberry Pi (/home/pi). 
 ```
 /
-└── /home
-    └── /pi
-        └── /stack-pihole
+└── home
+    └── pi
+        └── stack-pihole
 ```
 1. Create the folder structure with /home/pi/stack-pihole (cd ~, mkdir stack-pihole).
 2. Copy all files from the script folder to stack-pihole.
