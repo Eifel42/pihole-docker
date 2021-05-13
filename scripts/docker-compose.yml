@@ -1,0 +1,83 @@
+version: "3.8"
+
+services:
+  pc1_cloudflared:
+    container_name: pc1_cloudflared
+    restart: unless-stopped
+    image: visibilityspots/cloudflared:alpine-3.12  
+    environment: 
+      - "DNS1=1.1.1.1"
+      - "DNS2=1.0.0.1"
+    networks:
+      pihole_dns:
+        ipv4_address: 172.30.9.2
+
+  pc2_cloudflared:
+    container_name: pc2_cloudflared
+    restart: unless-stopped
+    image:  visibilityspots/cloudflared:alpine-3.12
+    environment:
+      - "DNS1=1.0.0.1"
+      - "DNS2=1.1.1.1"
+    networks:
+      pihole_dns:
+        ipv4_address: 172.30.9.3
+
+  pc3_pihole:
+    container_name: pc3_pihole
+    restart: unless-stopped
+    image: pihole/pihole
+    environment:
+      - "TZ=Europe/Berlin"
+      - "DNS1=172.30.9.2#5054"
+      - "DNS2=172.30.9.3#5054"
+      - "WEBPASSWORD=secrect1234"
+      - "DNSSEC=true"
+      - "DNS_BOGUS_PRIV=true"
+      - "DNS_FQDN_REQUIRED=true"
+    volumes:
+      - '/home/pi/stack-pihole/c1/etc-pihole/:/etc/pihole/'
+      - '/home/pi/stack-pihole/c1/etc-dnsmasq.d:/etc/dnsmasq.d/'
+    networks:
+      pihole_dns:
+        ipv4_address: 172.30.9.4
+      pihole_net:
+        ipv4_address: 192.168.0.140
+    depends_on:
+      - pc1_cloudflared
+      - pc2_cloudflared
+
+  pc4_pihole:
+    container_name: pc4_pihole
+    restart: unless-stopped
+    image: pihole/pihole
+    environment:
+      - "TZ=Europe/Berlin"
+      - "DNS1=172.30.9.3#5054"
+      - "DNS2=172.30.9.2#5054"
+      - "WEBPASSWORD=secrect1234"
+      - "DNSSEC=true"
+      - "DNS_BOGUS_PRIV=true"
+      - "DNS_FQDN_REQUIRED=true"
+    volumes:
+      - '/home/pi/stack-pihole/c2/etc-pihole/:/etc/pihole/'
+      - '/home/pi/stack-pihole/c2/etc-dnsmasq.d:/etc/dnsmasq.d/'
+    networks:
+      pihole_dns:
+        ipv4_address: 172.30.9.5
+      pihole_net:
+        ipv4_address: 192.168.0.138
+    depends_on:
+      - pc1_cloudflared
+      - pc2_cloudflared
+
+networks:
+  pihole_dns:
+    ipam:
+      config:
+        - subnet: 172.30.9.0/29   
+
+  pihole_net:
+    external:
+      name: pihole_net
+    
