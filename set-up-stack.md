@@ -55,6 +55,6 @@ docker-compose -p pihole pull
 docker-compose -p pihole up -d
 ```
 
-## Optional Set-Ups steps
+## Optional Set-Up steps
 
 In this step, each Pi-Hole instance can set to the user's preferences. It is possible to use more filter listers and to mixed the DNS configuration with others providers.
