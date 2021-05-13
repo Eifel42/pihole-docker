@@ -7,7 +7,7 @@ There is a risk of losing internet access, and the internet router has to reset 
 
 ## Pi-Hole
 
-The [Pi-hole®](https://docs.pi-hole.net) is a DNS sinkhole that protects your devices from unwanted content, without installing any client-side software.
+The [Pi-hole®](https://docs.pi-hole.net) project is a DNS sinkhole that protects your devices from unwanted content without installing any client-side software.
 
 The project can use as an ad blocker for each device on a network. It can also block particular domains for internet access (e.g., known malware, spyware, ransomware,  youth protection, Etc.). 
  
