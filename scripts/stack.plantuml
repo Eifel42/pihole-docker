@@ -1,0 +1,25 @@
+@startuml
+
+    skinparam componentStyle rectangle
+    node "Linux Host" {
+        frame "Docker Containers" {
+            [pc3_pihole] 
+            [pc4_pihole] 
+            
+
+            frame "Docker Subnet" {
+                [pc1_cloudflared] 
+                [pc2_cloudflared]
+            }      
+
+        }
+    }
+
+   
+    [pc3_pihole] --> [pc1_cloudflared] 
+    [pc4_pihole] --> [pc1_cloudflared] 
+            [pc3_pihole] --> [pc2_cloudflared] 
+            [pc4_pihole] --> [pc2_cloudflared] 
+
+
+@enduml
