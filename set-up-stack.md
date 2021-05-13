@@ -6,7 +6,6 @@ The stack needs an installation of docker and docker-compose on the Linux system
 
 The installation has the following structure on the home directory of a Raspberry Pi (/home/pi). 
 
-/
 └── home
     └── pi
         └── stack-pihole
