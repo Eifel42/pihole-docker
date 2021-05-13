@@ -1,4 +1,4 @@
-# Set-up Pihole
+# Set-up Pi-Hole
 
 The Repository contains a set-up of two Pi-hole container instances with docker.
 
@@ -18,7 +18,7 @@ This project use [Cloudflare](https://www.cloudflare.com/de-de/learning/dns/what
 
 ## Set-up Environment
 
-## Upgrade PiH-Hole
+## Upgrade Pi-Hole
 
 ## Conclusion
 - After more than a year of using it, we got less internet advertising, and many internet sides run fast without problems.
