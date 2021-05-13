@@ -21,6 +21,8 @@ This project use [Cloudflare](https://www.cloudflare.com/de-de/learning/dns/what
 
 ## Set-up Environment
 
+The set-up of the docker compose stack is describe [here](set-up-stack.md).
+
 ## Upgrade Pi-Hole
 
 To upgrade the stack to the next Pi-Hole Version is easy. It runs in three steps:
