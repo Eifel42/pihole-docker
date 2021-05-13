@@ -32,7 +32,9 @@ docker network create -d macvlan \
 To run the containers, the following steps are needed:
 1. **pull** load the Pi-Hole and Cloudflare images from the Docker Hub. 
 1. **up -d** build the internal docker networks and the containers and start them.
-1. **-p pihole** defines the name of the stack.
+- **-p pihole** defines the name of the stack.
+
+The script [build-stack.sh](scripts/build-stack.sh) runs the commands.
 
 ```
 docker-compose -p pihole pull
