@@ -2,6 +2,9 @@
 
 The Repository contains a set-up of two Pi-hole container instances with docker.
 
+*These scripts and procedures are without any warranty. 
+There is a risk of losing internet access, and the internet router has to reset to the default entries to the internet provider.*
+
 ## Pi-Hole
 
 The [Pi-hole®](https://docs.pi-hole.net) is a DNS sinkhole that protects your devices from unwanted content, without installing any client-side software.
