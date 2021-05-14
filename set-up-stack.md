@@ -43,7 +43,7 @@ Noteworthy is that all commands run the folder with file docker-compose.yml.
 ## Build and Run Docker Containers
 
 To run the containers, the following steps are needed:
-1. **pull** load the Pi-Hole and Cloudflare images from the Docker Hub. 
+1. **pull** load the Pi-Hole and Cloudflare docker images from the Docker Hub. 
 1. **up -d** build the internal docker networks and the containers and start them.
 - **-p pihole** defines the name of the stack.
 
