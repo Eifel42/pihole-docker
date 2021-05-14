@@ -13,7 +13,7 @@ The project can use as an ad blocker for each device on a network. It can also b
  
 ## DNS Providers
 
-The Domain Name System (DNS) finds the internet address of a domain name. Pi-Hole can use as a Domain Name System. The users can switch between a bunch of DNS providers. It is also possible to set up to own clients to DNS providers. Some DNS providers use the DNS for their own business, e.g., Google.
+The Domain Name System (DNS) finds the internet address of a domain name. Pi-Hole can use as a Domain Name System. The users can switch between a bunch of DNS providers. It is also possible to set up to own clients to DNS providers. Some DNS providers use the data for their own business, e.g., Google. The use of DNS Providers who support [DNSSEC](https://en.wikipedia.org/wiki/Domain_Name_System_Security_Extensions) protected against manipulated DNS data (e.g., [DNS spoffing](https://en.wikipedia.org/wiki/DNS_spoofing)).
 
 This project use [Cloudflare](https://www.cloudflare.com/learning/dns/what-is-dns) as DNS Provider.
 
