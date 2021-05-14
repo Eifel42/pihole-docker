@@ -60,7 +60,7 @@ In this step, each Pi-Hole instance can set to the user's preferences. It makes 
 
 ## Same Configuration
 
-To run both systems with the same configuration, stop one docker container. Do the necessary configuration in the other container and copy the content from one container directory to the other.
+To run both systems with the same configuration, stop one docker container. Do the necessary configuration in the running container and copy the content from one container directory to the other.
 
 Example Steps the configuration definied in [docker-compose.yml](scripts/docker-compose.yml):
 ```
