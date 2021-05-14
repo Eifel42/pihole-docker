@@ -58,3 +58,20 @@ docker-compose -p pihole up -d
 ## Optional Set-Up steps
 
 In this step, each Pi-Hole instance can set to the user's preferences. It is possible to use more filter listers and to mixed the DNS configuration with others providers.
+
+
+## Same Configuration
+
+To run both systems with the same configuration, stop one docker container. Do the necessary configuration in the other container and copy the content from one container directory to the other.
+
+Example Steps the configuration definied in [docker-compose.yml](scripts/docker-compose.yml):
+```
+    docker stop pc4_pihole
+    ## Do the configuration in pc3_pihole 
+    ## open browser http://192.168.0.140
+    docker stop pc3_pihole
+    sudo cp ~/stack-pihole/c1/* ~/stack-pihole/c2/ -r
+    docker start pc3_pihole
+    docker start pc4_pihole
+```
+
