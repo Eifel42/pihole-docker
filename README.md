@@ -28,7 +28,7 @@ The deployment diagram describes the setup of the four docker containers.
 ## Upgrade Pi-Hole
 
 To upgrade the stack to the next Pi-Hole Version is easy. It runs in three steps:
-1. **pull** loads the newest version of the Pi-Hole container from the Docker Hub.
+1. **pull** loads the newest version of the Pi-Hole docker image from the Docker Hub.
 1. **down** stops the hole stack and removes all containers and networks defined in the [docker-compose.yml](scripts/docker-compose.yml). 
 1. **up** build the containers and networks and starts all four docker containers.
 
