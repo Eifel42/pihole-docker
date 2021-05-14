@@ -81,4 +81,4 @@ To use both Pi-Hole Instances, they have to set as DNS-Servers. For test reasons
 
 ### Using in hole network
 
-To avoid the configuration of any internet device is the easiest way to define both Pi-Hole Instances as DNS-Server in the internet router. This step takes the risk that the internet connection can be lost. In the worse case, the internet router must set to the default provider settings.
+To avoid the configuration of any internet device is the easiest way to define both Pi-Hole Instances as DNS-Servers in the internet router. This step takes the risk that the internet connection can be lost. In the worse case, the internet router must set to the default provider settings.
