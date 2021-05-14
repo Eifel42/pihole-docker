@@ -75,4 +75,10 @@ sudo cp ~/stack-pihole/c1/* ~/stack-pihole/c2/ -r
 docker start pc3_pihole
 docker start pc4_pihole
 ```
+## Bind to Devices
 
+To use both Pi-Hole Instances, they have to set as DNS-Servers. For test reasons, it makes sense to set them as default DNS-Server on some devices like PCs, smartphones, tablets. 
+
+### Using in hole network
+
+To avoid the configuration of any internet device is the easiest way to define both Pi-Hole Instances as DNS-Sever in the internet router. This step takes the risk that the internet connection can be lost. In the worse case, the internet router must set to the default provider settings.
