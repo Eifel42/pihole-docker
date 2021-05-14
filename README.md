@@ -45,5 +45,5 @@ docker-compose -p pihole up -d
 - Old internet devices have higher protection against spy and ransomware.
 - Some commercial sites and payments services must be unlocked. For users with a high affinity to computer systems, it is no big deal. Ordinary computer users can run into problems.
 - The project covers the best practices from more than a year productive environment. 
-- Updates with docker-compose are easy and down under five minutes with one script.
+- Updates with docker-compose are easy and done in five minutes with one script.
 - If the internet router is bind to the two pi-hole instances, internet access can be lost. In this case, the internet router must set to the default DNS providers from the Internet Provider.
