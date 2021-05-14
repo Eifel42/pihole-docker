@@ -65,12 +65,15 @@ To run both systems with the same configuration, stop one docker container. Do t
 
 Example Steps the configuration definied in [docker-compose.yml](scripts/docker-compose.yml):
 ```
-    docker stop pc4_pihole
-    ## Do the configuration in pc3_pihole 
-    ## open browser http://192.168.0.140
-    docker stop pc3_pihole
-    sudo cp ~/stack-pihole/c1/* ~/stack-pihole/c2/ -r
-    docker start pc3_pihole
-    docker start pc4_pihole
+docker stop pc4_pihole
+
+# Do the configuration in pc3_pihole 
+# open browser http://192.168.0.140
+
+docker stop pc3_pihole
+sudo cp ~/stack-pihole/c1/* ~/stack-pihole/c2/ -r
+
+docker start pc3_pihole
+docker start pc4_pihole
 ```
 
