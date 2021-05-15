@@ -1,24 +1,36 @@
 @startuml
-
     skinparam componentStyle rectangle
     skinparam defaultTextAlignment center
+    
     node "Linux Host" {
-        frame "Docker Containers" {
-            component [ pc3_pihole\n network 192.168.0.140 \n subnet 172.30.9.4] as pc3
-            component [ pc4_pihole\n network 192.168.0.138 \n subnet 172.30.9.5] as pc4
+        frame "Docker Containers / Hosts" {
+
+            frame "pihole_net 192.168.0.137/29" {
+                component [ pc3_pihole\n network 192.168.0.140 \n subnet 172.30.9.4] as pc3
+                component [ pc4_pihole\n network 192.168.0.138 \n subnet 172.30.9.5] as pc4
             
-
-            frame "Docker Subnet" {
-                component [ pc1_cloudflared \n subnet 172.30.9.1]  as pc1
-                component [ pc2_cloudflared \n subnet 172.30.9.2] as pc2
-            }      
-
+                frame "subnet pihole_dns 172.30.9.0/29" {
+                   component [ pc1_cloudflared \n subnet 172.30.9.1] as pc1
+                   component [ pc2_cloudflared \n subnet 172.30.9.2] as pc2
+                }      
+            }
         }
     }
-   
+    
+    cloud {
+        frame "Cloudfare" {
+            component [ DNS 1.1.1.1 ] as dns1
+            component [ DNS 1.0.0.1 ] as dns2
+        }
+    }
+
     pc3 --> pc1
-    pc4 --> pc1
     pc3 --> pc2
+    pc4 --> pc1
     pc4 --> pc2
 
+    pc1 -> dns1
+    pc1 -> dns2
+    pc2 --> dns1
+    pc2 --> dns2
 @enduml
