@@ -21,9 +21,9 @@ This project use [Cloudflare](https://www.cloudflare.com/learning/dns/what-is-dn
 
 The set-up of the docker compose stack is describe [here](set-up-stack.md).
 
-The deployment diagram describes the setup of the four docker containers.
-
-![Deployment Diagram](stack/stack.png)
+Figure I Deployment Diagram describes the setup of the four docker containers.
+*Figure I Deployment Diagram*
+![Figure I Deployment Diagram](stack/stack.png)
 
 ## Upgrade Pi-Hole
 
