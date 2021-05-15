@@ -36,7 +36,10 @@ docker network create -d macvlan \
 
 The file [docker-compose.yml](scripts/docker-compose.yml) describes the setup of the Pi-Hole Stack. By using the default setup of this project, only the password of the Pi-Hole instances have to change. The default password is "secret1234". 
 
-Noteworthy is that all commands run the folder with file docker-compose.yml. 
+Noteworthy is that all commands run the folder with file docker-compose.yml.
+
+Stack Landscape illustrated a detailed description of the create containers, networkers, and connection to the Cloudfare DNS Servers. 
+![Stack Landscape](stackLandscape/stackLandscape.png)
 
 **Note:** *On the Raspberry Pi, the image: visibilityspots/cloudflare:alpine-3.12 works stable. This point has to figure out for new versions.*
 
