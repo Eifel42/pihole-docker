@@ -40,8 +40,10 @@ Noteworthy is that all commands run the folder with file docker-compose.yml.
 
 Figure II Stack Landscape illustrated a detailed description of the create containers, networkers, and connection to the Cloudfare DNS Servers.
 
-*Figure II Stack Landscape*
-![Figure II Stack Landscape](stackLandscape/stackLandscape.png)
+<p align="center">
+  <img alt="Figure I Deployment Diagram" src="stackLandscape/stackLandscape.png">
+  <br><i>Figure II Stack Landscap</i>
+</p>
 
 **Note:** *On the Raspberry Pi, the image: visibilityspots/cloudflare:alpine-3.12 works stable. This point has to figure out for new versions.*
 
