@@ -25,7 +25,7 @@ Figure I Deployment Diagram describes the setup of the four docker containers.
 
 <p align="center">
   <img alt="Figure I Deployment Diagram" src="stack/stack.png">
-  <i>Figure I Deployment Diagram</i>
+  <br><i>Figure I Deployment Diagram</i>
 </p>
 
 ## Upgrade Pi-Hole
