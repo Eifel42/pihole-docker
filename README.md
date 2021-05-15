@@ -23,7 +23,7 @@ The set-up of the docker compose stack is describe [here](set-up-stack.md).
 
 Figure I Deployment Diagram describes the setup of the four docker containers.
 
-<p align="center">
+<p align="left">
   <img alt="Figure I Deployment Diagram" src="stack/stack.png">
   <br><i>Figure I Deployment Diagram</i>
 </p>
